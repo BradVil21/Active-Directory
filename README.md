@@ -23,7 +23,8 @@ https://www.virtualbox.org/
 **Install Windows 10 ISO image:**
 https://www.microsoft.com/en-us/software-download/windows10
 
-_Based on your operating system, please verify and install the version of the software that matches your operating system architecture (either 64-bit or 32-bit). To determine which version you need, check whether your operating system is 64-bit or 32-bit._ You can view this by running **systeminfo** 
+_Based on your operating system, please verify and install the version of the software that matches your operating system architecture (either 64-bit or 32-bit). To determine which version you need, check whether your operating system is 64-bit or 32-bit._ You can view this by running **system-info** 
 within the command prompt. 
 
-**Step 2:** After the installation, 
+**Step 2:** After the installation, you will open your Virtual Machine and import your ISO image by selecting **"NEW"**.
+When creating a Virtual Machine for your Windows ISO image, please look at the link for support and visualization of my setup. 
