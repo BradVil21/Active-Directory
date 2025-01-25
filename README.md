@@ -27,4 +27,4 @@ _Based on your operating system, please verify and install the version of the so
 within the command prompt. 
 
 **Step 2:** After the installation, you will open your Virtual Machine and import your ISO image by selecting **"NEW"**.
-When creating a Virtual Machine for your Windows ISO image, please look at the link for support and visualization of my setup. 
+When creating a Virtual Machine for your Windows ISO image, please look at the link for support and visualization of my setup. https://drive.google.com/file/d/1DeyzcTVGCi0MqARtudVVC4cdmjc5-glg/view?usp=drive_link
