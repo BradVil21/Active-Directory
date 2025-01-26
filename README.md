@@ -35,5 +35,10 @@ When creating a Virtual Machine for your Windows ISO image, please view the link
 **Step 3: [Changing Adapter Settings / Renaming PC]** After completing the installation, I configured the adapter settings for the Internal Network to connect to the DHCP server. Initially, the system was assigned an APIPA (Automatic Private IP Addressing) address in the 169.254.x.x range because it was unable to connect to the DHCP server. I then updated the adapter settings by statically configuring the IP address, subnet mask, and DNS server address. Following this configuration, I renamed the PC to "Domain Controller" to reflect its intended role within the network. Please view the link below.
 https://drive.google.com/file/d/13jTdKZ3VL2RDE1bWniSmTqR2eD5s5O0d/view?usp=drive_link
 
-Step 4: [Creating an OU Admin account / RAS/NAT installation]
+**Step 4: [Creating an OU Admin account / RAS/NAT installation]** I started by accessing Active Directory Users and Computers to verify the domain. I created an Organizational Unit (OU) named "Admins" and added a new user to this OU, assigning a password and ensuring the "Password Never Expires" option was unchecked. I then elevated this user to a Domain Admin by adding them to the Domain_Admins group under the "Member Of" properties.
 
+To enable internet access for the Windows 10 client through the domain controller, I installed and configured Remote Access with Network Address Translation (NAT). This involved adding the Remote Access and Routing roles, configuring Routing and Remote Access, and selecting NAT to route internet traffic through the domain controller.
+
+Finally, I set up a DHCP server by installing the DHCP role and creating a scope, allowing the Windows 10 client to dynamically receive an IP address and connect to the internet.
+
+**Step 5: [Creating a DHCP scope]**
