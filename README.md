@@ -40,5 +40,6 @@ https://drive.google.com/file/d/13jTdKZ3VL2RDE1bWniSmTqR2eD5s5O0d/view?usp=drive
 To enable internet access for the Windows 10 client through the domain controller, I installed and configured Remote Access with Network Address Translation (NAT). This involved adding the Remote Access and Routing roles, configuring Routing and Remote Access, and selecting NAT to route internet traffic through the domain controller.
 
 Finally, I set up a DHCP server by installing the DHCP role and creating a scope, allowing the Windows 10 client to dynamically receive an IP address and connect to the internet.
+https://drive.google.com/file/d/1S5oiCJb_Km7mbDleQyOBxxJ5h6o_9j82/view?usp=drive_link
 
 **Step 5: [Creating a DHCP scope]**
