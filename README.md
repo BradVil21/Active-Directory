@@ -45,4 +45,23 @@ https://drive.google.com/file/d/1S5oiCJb_Km7mbDleQyOBxxJ5h6o_9j82/view?usp=drive
 **Step 5: [Creating a DHCP scope]** I set up a DHCP scope to assign IP addresses to clients. Using the DHCP management console, I created a new scope for IPv4 with a range of 172.16.0.100 to 172.16.0.200, a subnet mask of 255.255.255.0 (length 24). I then configured the DHCP options to specify the Domain Controller's IP address (172.16.0.1) as the DNS server and gateway for clients. Once this was configured, I refreshed the settings to ensure proper functionality.
 https://drive.google.com/file/d/1ygI71fJIb9M0W8BfnVBmO74D8Bfn6gW-/view?usp=drive_link
 
-Step 6: [Adding Users/Groups using Automation through PowerShell]
+**Step 6: [Adding Users/Groups using Automation through PowerShell]** I automated the process of adding users to the "Employees" Organizational Unit (OU) using PowerShell. The script prompts for the user's first name, surname, username, and password. Once the details are entered, it creates a new user in the "Employees" OU with the specified attributes, sets the account password, and enables the account. Additionally, it retrieves and verifies the new user details using the Get-ADUser cmdlet to ensure proper creation.
+
+$firstname = Read-Host -Prompt "Enter FirstName: " 
+$SurName = Read-Host -Prompt "Enter Surname " 
+$UserName = Read-Host -Prompt "UserName: " 
+$Password = Read-Host -Prompt "Password: "
+
+New-ADUser `
+-name $firstname `
+-Surname $SurName `
+-GivenName $firstname `
+-UserPrincipalName $UserName `
+-AccountPassword(ConvertTo-SecureString $Password -AsPlainText -Force) `
+-path "OU=EMPLOYEES,DC=mydomain,DC=com"
+
+Enable-ADAccount -Identity $firstname
+Get-ADUser -Identity $firstname
+
+This script simplifies user creation and ensures all new accounts are correctly added and enabled in the specified OU.
+https://drive.google.com/file/d/18XYfa26WWMZmV7k5fNRkMGOe4f1l5Uh5/view?usp=drive_link
