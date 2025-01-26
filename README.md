@@ -84,3 +84,11 @@ For the admin account, I added the account to the "ADMINS" Organizational Unit (
 
 These steps ensured both accounts were fully functional and appropriately configured within the domain environment.
 https://drive.google.com/file/d/1cwdSj_R5-XPVXEfAq7DB7phUM-jcVFcL/view?usp=drive_link
+
+# Troubleshooting Network Connection 
+ I resolved a network connectivity issue where I was able to ping the domain controller's IP address (172.16.0.1) from the command prompt but was unable to ping an external address, such as 8.8.8.8.
+
+To troubleshoot, I reviewed the network configuration and retraced my steps. Upon investigation, I discovered that NAT (Network Address Translation) had not been configured in the Routing and Remote Access settings on the domain controller. I promptly accessed the Routing and Remote Access console, enabled the NAT configuration, and ensured it was applied to the correct network interface.
+
+After making this change, I successfully tested the connection and was able to ping external addresses, including 8.8.8.8, confirming that the issue was resolved. This adjustment restored full network functionality for the environment.
+https://drive.google.com/file/d/1OWeFJ5uYyw76qGoTqZWUeNqrkK0hBSss/view?usp=drive_link
