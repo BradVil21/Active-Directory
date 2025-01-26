@@ -45,3 +45,4 @@ https://drive.google.com/file/d/1S5oiCJb_Km7mbDleQyOBxxJ5h6o_9j82/view?usp=drive
 **Step 5: [Creating a DHCP scope]** I set up a DHCP scope to assign IP addresses to clients. Using the DHCP management console, I created a new scope for IPv4 with a range of 172.16.0.100 to 172.16.0.200, a subnet mask of 255.255.255.0 (length 24). I then configured the DHCP options to specify the Domain Controller's IP address (172.16.0.1) as the DNS server and gateway for clients. Once this was configured, I refreshed the settings to ensure proper functionality.
 https://drive.google.com/file/d/1ygI71fJIb9M0W8BfnVBmO74D8Bfn6gW-/view?usp=drive_link
 
+Step 6: [Adding Users/Groups using Automation through PowerShell]
