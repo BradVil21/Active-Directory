@@ -69,4 +69,11 @@ https://drive.google.com/file/d/18XYfa26WWMZmV7k5fNRkMGOe4f1l5Uh5/view?usp=drive
 **Step 7: [Adding a Client to VM using Windows 10]** I installed Windows 10 as a client in a virtual machine to integrate it into the Active Directory environment. I started by creating a new virtual machine and mounted the Windows 10 installation ISO. During the installation, I configured the necessary settings, including language, time, and keyboard preferences, and proceeded with the standard setup process.
 https://drive.google.com/file/d/125MGmlbglxD3UFq9-N65TuLgSr6D6GHm/view?usp=drive_link
 
-Step 8: [Verify internet connectivity/ 
+**Step 8: [Verify internet connectivity/Troubleshooting]** I encountered login issues with both an admin and a user account and resolved them using Active Directory tools.
+
+For the user account, Charlie Brooks, I accessed Active Directory Users and Computers on the domain controller. I identified that the account was disabled and required a password reset. I reset the password, enabled the account, and confirmed the changes. Afterward, I successfully logged in to the Windows 10 client using Charlie's credentials, verifying that the issue was resolved.
+
+For the admin account, I added the account to the "ADMINS" Organizational Unit (OU) and assigned it to the Domain Admins group. This action granted the necessary rights and permissions to make administrative changes within the domain. After completing these updates, I tested the admin account and confirmed it could log in and perform tasks as intended.
+
+These steps ensured both accounts were fully functional and appropriately configured within the domain environment.
+https://drive.google.com/file/d/1cwdSj_R5-XPVXEfAq7DB7phUM-jcVFcL/view?usp=drive_link
