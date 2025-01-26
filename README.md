@@ -20,6 +20,9 @@ Before diving into the good stuff it is important to install a virtual machine a
 **Install Oracle:**
 https://www.virtualbox.org/
 
+**Install Windows Server 2019 ISO image:**
+https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019
+
 **Install Windows 10 ISO image:**
 https://www.microsoft.com/en-us/software-download/windows10
 
