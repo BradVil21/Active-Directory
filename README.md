@@ -68,3 +68,5 @@ https://drive.google.com/file/d/18XYfa26WWMZmV7k5fNRkMGOe4f1l5Uh5/view?usp=drive
 
 **Step 7: [Adding a Client to VM using Windows 10]** I installed Windows 10 as a client in a virtual machine to integrate it into the Active Directory environment. I started by creating a new virtual machine and mounted the Windows 10 installation ISO. During the installation, I configured the necessary settings, including language, time, and keyboard preferences, and proceeded with the standard setup process.
 https://drive.google.com/file/d/125MGmlbglxD3UFq9-N65TuLgSr6D6GHm/view?usp=drive_link
+
+Step 8: [Verify internet connectivity/ 
